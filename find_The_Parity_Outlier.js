@@ -9,10 +9,6 @@ function findOutlier(arr){
             odd=i;
         }
     }
-    if(m>n){
-        return arr[odd];
-    }else{
-        return arr[even];
-    }
+    return m>n?arr[odd]:arr[even];
 }
 findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]);
